@@ -13,7 +13,7 @@ const io = socketio(server, {
         methods: ['GET', 'POST'],
     }
 });
-server.listen(process.env.HTTPS_PORT, () => {
+server.listen(process.env.PORT, () => {
     console.log("Server running!");
 });
 const room = [];
