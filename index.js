@@ -11,6 +11,7 @@ const io = socketio(server, {
     cors: {
         origin: '*',
         methods: ['GET', 'POST'],
+        Credentials:true
     }
 });
 server.listen(process.env.PORT, () => {
